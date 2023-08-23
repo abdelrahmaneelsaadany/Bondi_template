@@ -1,0 +1,197 @@
+/* Start Variables */
+:root{
+    --dark:#19283f;
+    --second:#ff3150;
+    --icon-color:#33d1cc;
+    --essay-color:#6f7f8c;
+    --yellowColor:#ffc400;
+    --section-color:#eff7fa;
+}
+/* End Variables */
+body{
+    scroll-behavior: smooth;
+    font-family: "Roboto" , sans-serif;
+}
+.main-btn{
+    background-color: var(--second);
+    color: var(--yellowColor);
+    transition: all 0.5s ease-in-out;
+}
+.main-btn:hover{
+    background-color: black ;
+    color: white;
+}
+.main-heading svg{
+    color: var(--yellowColor);
+}
+.main-heading::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--icon-color);
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Start Navbar */
+.navbar {
+    background-color: var(--dark);
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.navbar .navbar-nav .active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus{
+    color: var(--icon-color);
+}
+.search{
+    border-left: 1px solid var(--icon-color);
+}
+.search svg{
+    color: var(--icon-color);
+}
+/* Start Landing */
+.landing{
+    background-color: var(--dark);
+    min-height: calc( 100vh - 146px);
+}
+/* End Landing */
+/* Start Features */
+.features  .main-heading svg{
+    color: #ffc400;
+    margin-bottom: 1rem;
+}
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%) ;
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color) ;
+}
+.features .icon-holder .icon{
+    color: var(--icon-color);
+}
+.features .feat h4{
+    color: var(--yellowColor);
+    margin-top: 20px;
+}
+/* End Features */
+/* Start Our Work */
+.our-section {
+    background-color: var(--section-color);
+}
+.our-section ul li{
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+.our-section ul .active{
+    background-color: var(--second);
+    color: var(--yellowColor);
+}
+.our-section ul li:hover{
+    color: var(--second);
+}
+.our-section .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-section .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1cc9e;
+    width:  calc(100% - 10px);
+    height:  calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+.our-section .box:hover::before{
+    transform: translateX(0);
+}
+/* End Our Work */
+/* Start Stuff Section */
+.stuff .description{
+    max-width: 500px;
+}
+/* End Stuff Section */
+/* Start Our-Team */
+.our-team {
+    background-color: var(--section-color);
+}
+.our-team  .main-title h2{
+    color: var(--yellowColor);
+}
+.our-team .box h4{
+    background-color: var(--icon-color);
+}
+/* End Our-Team */
+/* Start Project */
+.project{
+    background-color: var(--dark);
+}
+/* End Project */
+/* Start Subcribe */
+.subcribe{
+    background-color: var(--yellowColor);
+}
+.subcribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subcribe input[type="text"]:focus{
+    outline: none;
+}
+.subcribe input::placeholder{
+    color: white;
+}
+.subcribe input[type="submit"]{
+    background-color: var(--dark);
+    color: var(--yellowColor);
+    transition: all 0.5s ease;
+}
+.subcribe input[type="submit"]:hover{
+    background-color: var(--second);
+}
+/* End Subcribe */
+/* Start Footer */
+.footer{
+    background-color: var(--dark);
+}
+.footer .copyright > span{
+    color: var(--icon-color);
+}
+.footer .copyright div span{
+    color: var(--yellowColor);
+}
+.footer .contact ul li a svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .twitter{
+    background-color: #1da1f2;
+}
+.footer .linkedin{
+    background-color: #0a66c2;
+}
+.footer .youtube{
+    background-color: #ff0000;
+}
+/* End Footer */
